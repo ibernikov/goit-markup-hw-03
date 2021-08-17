@@ -8,27 +8,30 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./CSS/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <!--Шапка сайта-->
-       <header>
-        <nav>
-        <a href="./index.html" class="logo"> Web<span class="logo-header">Studio</span></a>
-        <ul class="nav">
-            <li class="nav-item"><a href="./index.html" class="nav-link">Студия</a></li>
-            <li class="nav-item"><a href="./portfolio.html" class="nav-link current">Портфолио</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
+    <!--Header-->
+       <header class="header">
+        <div class="container-header"> 
+        <nav class="navbar">
+        <a href="./index.html" class="web-header"> Web<span class="studio-header">Studio</span></a>
+        <ul class="site-nav">
+            <li class="item"><a href="./index.html" class="nav-link">Студия</a></li>
+            <li class="item"><a href="./portfolio.html" class="nav-link current">Портфолио</a></li>
+            <li class="item"><a href="#" class="nav-link">Контакты</a></li>
         </ul>
-        </nav>
         <ul class="contacts-header">
-            <li class="contacts-item"><a href="mailto:info@devstudio.com" class="contacts-link">info@devstudio.com</a></li>
-            <li class="contacts-item"><a href="tel:+380961111111" class="contacts-link">+380 96 111 11 11</a></li>
+            <li class="item"><a href="mailto:info@devstudio.com" class="contacts-link">info@devstudio.com</a></li>
+            <li class="item"><a href="tel:+380961111111" class="contacts-link">+380 96 111 11 11</a></li>
             </ul>
+        </nav>
+        </div>
     </header>
-
     <main>
         <section>
+            
             <h1></h1>
             <ul class="filters">
                 <li class="filter-item"><button class="filter-button" type="button">Все</button></li>
@@ -37,76 +40,94 @@
                 <li class="filter-item"><button class="filter-button" type="button">Дизайн</button></li>
                 <li class="filter-item"><button class="filter-button" type="button">Маркетинг</button></li>
             </ul>
-            <ul>
+            <div class="flex-container">
+            <ul class="flex-ul">
+                <div class="flex-element">
                 <li class="list">
                     <a href="" class="list-item">
                     <img src="./images/img_port_11.jpg" alt="Технокряк" width="370"></a>
                     <h2 class="list-title">Технокряк</h2>
                     <p class="list-content">Веб-сайт</p>
                 </li>
+            </div>
+            <div class="flex-element">
                 <li class="list">
                     <a href="" class="list-item">
                     <img src="./images/img_port_12.jpg" alt="Постер New Orlean vs Golden Star" width="370"> </a>
                     <h2 class="list-title">Постер New Orlean vs Golden Star</h2>
                     <p class="list-content">Дизайн</p>
                 </li>
+            </div>
+            <div class="flex-element">
                 <li class="list">
                     <a href="" class="list-item">
                     <img src="./images/img_port_13.jpg" alt="Ресторан Seafood" width="370"></a>
                     <h2 class="list-title">Ресторан Seafood</h2>
                     <p class="list-content">Приложение</p>
-                    </li>
+                </li>
+            </div>
+            <div class="flex-element">
                 <li class="list">
                     <a href="" class="list-item">
                     <img src="./images/img_port_21.jpg" alt="Проект Prime" width="370"></a>
                     <h2 class="list-title">Проект Prime</h2>
                     <p class="list-content">Маркетинг</p>
                 </li>
+            </div>
+            <div class="flex-element">
                 <li class="list">
                     <a href="" class="list-item">
                     <img src="./images/img_port_22.jpg" alt="Проект Boxes" width="370"></a>
                     <h2 class="list-title">Проект Boxes</h2>
                     <p class="list-content">Приложение</p>
                 </li>
+            </div>
+            <div class="flex-element">
                 <li class="list">
-                    <a href="" class="list-item">
+                        <a href="" class="list-item">
                     <img src="./images/img_port_23.jpg" alt="Inspiration has no Borders" width="370"></a>
                     <h2 class="list-title">Inspiration has no Borders </h2>
                     <p class="list-content">Веб-сайт</p>
-                    </a>
                 </li>
+            </div>
+            <div class="flex-element">
                 <li class="list">
                     <a href="" class="list-item">
                     <img src="./images/img_port_31.jpg" alt="Издание Limited Edition" width="370"></a>
                     <h2 class="list-title">Издание Limited Edition</h2>
                     <p class="list-content">Дизайн</p>
                 </li>
+            </div>
+            <div class="flex-element">
                 <li class="portfolio-list">
                     <a href="" class="list-item">
                     <img src="./images/img_port_32.jpg" alt="Проект LAB" width="370"></a>
                     <h2 class="list-title">Проект LAB</h2>
                     <p class="list-content">Маркетинг</p>
                 </li>
+            </div>
+            <div class="flex-element">
                 <li class="list">
                     <a href="" class="list-item">
                     <img src="./images/img_port_33.jpg" alt="Growing Business" width="370"></a>
                     <h2 class="list-title">Growing Business</h2>
                     <p class="list-content">Приложение</p>
                 </li>
-            </ul>
+            </div>
+        </ul>
+        </div>
         </section>
-    <!--Футер-->
     </main>
-    <!--Футер-->
+    <!--Footer-->
     <footer>
-        <div class="container">
-            <a href="./index.html" class="logo"> Web<span class="logo-footer">Studio</span></a>
+        <div class="container-footer">
+            <a href="./index.html" class="web-footer"> Web<span class="studio-footer">Studio</span></a>
                 <ul class="contacts-footer">
                     <li class="contacts-footer-item"><p class="adress">г.Киев, пр.Леси Украинки, 26</p></li>
                     <li class="contacts-footer-item"><a href="mailto:info@devstudio.com" class="contacts-footer-link">info@devstudio.com</a></li>
                     <li class="contacts-footer-item"><a href="tel:+380961111111" class="contacts-footer-link">+380 96 111 11 11</a></li>
                 </ul>
-            </div>
+        </div>
     </footer>
     </body>
 </html>
